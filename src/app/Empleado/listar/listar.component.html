@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Empleados</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID_EMPLEADO</th>
+                                <th>ID_TIENDA</th>
+                                <th>PRIMER NOMBRE</th>
+                                <th>SEGUNDO NOMBRE</th>
+                                <th>PRIMER APELLIDO</th>
+                                <th>SEGUNDO APELLIDO</th>
+                                <button (click)="Nuevo()" class="btn btn-primary float-right" style="margin-left:10px;">Nuevo</button>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let empleado of empleados" class="text-center">
+                                <td>{{empleado.id_empleado}}</td>
+                                <td>{{empleado.id_tienda}}</td>
+                                <td>{{empleado.p_nombre}}</td>
+                                <td>{{empleado.s_nombre}}</td>
+                                <td>{{empleado.p_apellido}}</td>
+                                <td>{{empleado.s_apellido}}</td>
+                                <td>
+                                    <button (click)="Editar(empleado)" class="btn btn-warning">Editar</button>
+                                    <button (click)="Delete(empleado)" class="btn btn-danger">Borrar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Editar Empleado</h3>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">ID Tienda</label>
+                            <input [(ngModel)]="modelEmpleado.id_tienda" name= "id_tienda" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Primer Nombre</label>
+                            <input [(ngModel)]="modelEmpleado.p_nombre" name= "p_nombre" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Segundo Nombre</label>
+                            <input [(ngModel)]="modelEmpleado.s_nombre" name= "s_nombre" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Primer Apellido</label>
+                            <input [(ngModel)]="modelEmpleado.p_apellido" name= "p_apellido" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Segundo Apellido</label>
+                            <input [(ngModel)]="modelEmpleado.s_apellido" name= "s_apellido" type="text" class="form-control">
+                        </div>
+                        <button (click)="Actualizar(modelEmpleado)" class="btn btn-danger">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
